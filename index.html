@@ -7,9 +7,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript">
-	$(function() {
-    		$("#dynaloader").delay(3000).fadeOut(2166);
-	});
+	$("#dyna").show();
+setTimeout(function() { $("#dynaloader").hide(); }, 5000);
+	// $(function() {
+ //    		$("#dynaloader").delay(1000).fadeOut(2166);
+	// });
 </script>
 
 </head>
@@ -32,14 +34,20 @@
 
 	<div id="dynaloader" style="height: 100%;
     width: 100%;
-    background-color: #000000;">
-		<a href='https://postimg.org/image/7hftf7pul/'><img src='https://s30.postimg.org/7hftf7pul/dynaliticposter.png' border='0' alt='postimage'/></a>
+    background-color: #000000;  position: relative; ">
 		
 		<h1 style="color: #ffffff; font-family: 'Titillium Web', sans-serif;">Dynalitic</h1>
 			<h4 style="color: #616161; font-family: 'Titillium Web', sans-serif;"> Wreck havoc!</h4>
 
 		</div>
-
+<div id="container">
+    <div id="overlay">
+        Text OvOVERERERERE
+    </div>
+    <div id="base">
+        <img src="https://www.google.com/logos/doodles/2013/maria_mitchells_195th_birthday-2005006.2-hp.jpg" />
+    </div>
+  </div>
 
 
 
