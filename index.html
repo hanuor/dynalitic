@@ -3,25 +3,36 @@
 
 <title>Shantanu Johri</title>
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300" rel="stylesheet">
+ <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
 <link href="assets/one.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript">
-// 	$("#overlay").show();
-// setTimeout(function() { $("#overlay").hide(); }, 5000);
-	 $(function() {
-    		$("#overlay").delay(1000).fadeOut(2166);
-	 });
-	  $(function() {
-    		$("#base").delay(10000);
-	 });
-</script>
 
 </head>
 
 
 <div id = "dynaintro">
 <body style="background-color:#000000">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+	<script type="text/javascript">
+
+// 	$("#overlay").show();
+// setTimeout(function() { $("#overlay").hide(); }, 5000);
+	 // $(function() {
+  //   		$("#overlay").delay(1000).fadeOut(2166);
+	 // });
+	 //  $(function() {
+  //   		$("#base").delay(10000);
+	 // });
+function openColorBox(){
+        $.colorbox({iframe:true, width:"80%", height:"80%", href: "https://hanuor.github.io/shanjohri/"});
+      }
+      
+      setTimeout(openColorBox, 5000);
+</script>
+
 
 <div id="containerPro">Will display after 5 seconds</div>
 // <script>
@@ -43,6 +54,45 @@
 			<h4 style="color: #616161; font-family: 'Titillium Web', sans-serif;"> Wreck havoc!</h4>
 
 		</div> -->
+<button id="myBtn">Open Modal</button>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+		<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 <div id="container">
     <div id="overlay">
     		<h3 style="color: #ffffff; font-family: 'Titillium Web', sans-serif;">Dynalitic. Wreck havoc!</h3>
